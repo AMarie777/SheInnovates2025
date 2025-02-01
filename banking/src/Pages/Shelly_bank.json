@@ -1,0 +1,81 @@
+{
+    "users": [
+      {
+        "user_id": 1,
+        "name": "Shelly",
+        "email": "shelly@example.com",
+        "phone": "123-456-7890"
+      }
+    ],
+    "bank_accounts": [
+      {
+        "account_id": 1,
+        "user_id": 1,
+        "account_number": "123456789012",
+        "bank_name": "Bank of America",
+        "account_type": "Checking",
+        "balance": 5000.00
+      }
+    ],
+    "cards": [
+      {
+        "card_id": 1,
+        "user_id": 1,
+        "bank_account_id": 1,
+        "card_number": "4111111111111111",
+        "card_type": "Credit",
+        "expiration_date": "2027-06-01",
+        "cvv": "123"
+      }
+    ],
+    "transactions": [
+      {
+        "transaction_id": 1,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 50.00,
+        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Grocery shopping"
+      },
+      {
+        "transaction_id": 2,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 20.00,
+        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Coffee shop"
+      },
+      {
+        "transaction_id": 3,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 100.00,
+        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_type": "Withdrawal",
+        "description": "ATM cash withdrawal"
+      }
+    ],
+    "subscriptions": [
+      {
+        "charge_id": 1,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "charge_date": "2025-02-01",
+        "frequency": "Monthly",
+        "description": "Netflix Subscription"
+      },
+      {
+        "charge_id": 2,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.02,
+        "charge_date": "2025-02-09",
+        "frequency": "Monthly",
+        "description": "Rent"
+      }
+    ]
+  }
+  
