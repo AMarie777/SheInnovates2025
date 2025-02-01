@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       ],
     };
+    const options = {}
   
     const config = {
       type: "doughnut",
