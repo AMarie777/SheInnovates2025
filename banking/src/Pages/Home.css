@@ -1,0 +1,31 @@
+body {
+    margin: 0; /* Removes default browser margin */
+    padding: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    background-color: #fce1f3; /* Pastel Pink */
+    color: #7d5ba6;
+}
+
+.home{
+    text-align: center;
+    padding-top: 200px;
+    /*padding-top: 0px;*/
+}
+
+.message {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+@media (max-width: 1000px) {
+    .home {
+        padding-top: 300px; /* Extra space when navbar stacks vertically */
+    }
+}
+
+@media (max-width: 600px) {
+    .home {
+        padding-top: 300px; /* More space for very small screens */
+    }
+}

@@ -1,0 +1,70 @@
+/* whole page */
+.subscriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 280px;
+}
+
+/*each subscription box*/
+.subscription-item {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325);
+    /*transition: all 0.3s ease;*/
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/*text in subcription box*/
+.subscription-header {
+    padding: 20px; /*size of boxes vertically*/
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.merchant {
+    float:left;
+    padding-left: 20px;
+}
+.price {
+    padding-left:30px;
+    
+}
+
+.subscription-item.expanded {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-details {
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.subscription-details ul {
+    list-style-type: none; /*rids bullet points*/
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.subscription-details li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+.contest-button {
+    padding: 10px 15px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contest-button:hover {
+    background-color: #d9363e;
+}

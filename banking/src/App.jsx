@@ -1,5 +1,3 @@
-import './App.css'
-
 //importing react router to navigate between pages
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'; //Navigation bar

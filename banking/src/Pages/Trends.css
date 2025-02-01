@@ -1,8 +1,16 @@
 body {
+  margin: 0; /* Removes default browser margin */
+  padding: 0;
   text-align: center;
   font-family: "Inter", sans-serif;
   background-color: #fce1f3; /* Pastel Pink */
   color: #7d5ba6;
+}
+
+.trends {
+  text-align: center;
+  padding-top: 250px;
+  
 }
 
 .chart-container {
@@ -16,4 +24,16 @@ canvas {
   margin: 0 auto;
   width: 100% !important;
   height: 100% !important;
+}
+
+@media (max-width: 1000px) {
+  .trends {
+      padding-top: 300px; /* Extra space when navbar stacks vertically */
+  }
+}
+
+@media (max-width: 600px) {
+  .trends {
+      padding-top: 300px; /* More space for very small screens */
+  }
 }
