@@ -1,29 +1,22 @@
 import './Subscriptions.css'
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import data from "./Shelly_bank.json";
+import React, { useState, useEffect } from 'react';
 
-export default function Subscriptions() {
 
-    //examples
-    const subscriptions = [
-        {
-            name: 'Netflix',
-            price: 7.99,
-            charges: ['2024-01-01', '2024-02-01', '2024-03-01']
-        },
-        {
-            name: 'Spotify',
-            price: 1000.00,
-            charges: ['2024-01-15', '2024-02-15', '2024-03-15']
-        },
-        {
-            name: 'Adobe Creative Cloud',
-            price: 0.01,
-            charges: ['2024-01-20', '2024-02-20', '2024-03-20']
-        }
-    ];
+    export default function Subscriptions() {
+        const [subscriptions, setSubscriptions] = useState([]);
+        const [expanded, setExpanded] = useState(null);
+    
+        useEffect(() => {
+            if (data && data.subscriptions) {
+                setSubscriptions(data.subscriptions);
+            } else {
+                console.error("Error: Data or subscriptions not found");
+            }
+        }, []);
 
-    const [expanded, setExpanded] = useState(null);
+  
 
     const toggleExpand = (index) => {
         setExpanded(expanded === index ? null : index);
@@ -39,8 +32,8 @@ export default function Subscriptions() {
 
                     <div className="subscription-header" onClick={() => toggleExpand(index)}>
                         {/*span -- inline styling (similar to div)*/}
-                        <span className="merchant">{sub.name}</span>
-                        <span className="price">${sub.price.toFixed(2)}</span>
+                        <span className="description">{sub.description}</span>
+                        <span className="price">${sub.amount ? Number(sub.amount).toFixed(2) : "0.00"}</span>
                     </div>
 
                     

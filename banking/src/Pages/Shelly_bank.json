@@ -75,6 +75,24 @@
         "charge_date": "2025-02-09",
         "frequency": "Monthly",
         "description": "Rent"
+      },
+      {
+        "charge_id": 3,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "charge_date": "2025-03-01",
+        "frequency": "Monthly",
+        "description": "Netflix Subscription"
+      },
+      {
+        "charge_id": 4,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.02,
+        "charge_date": "2025-03-09",
+        "frequency": "Monthly",
+        "description": "Rent"
       }
     ]
   }
