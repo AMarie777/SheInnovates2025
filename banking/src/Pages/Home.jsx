@@ -1,6 +1,8 @@
 /* Link component creates navigatable links to diff pages */
 import './Home.css'
 import React from 'react'
+import data from "./Shelly_bank.json";
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
     return (
