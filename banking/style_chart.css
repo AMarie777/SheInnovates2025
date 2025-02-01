@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  background-color: #fce1f3; /* Pastel Pink */
+  color: #7d5ba6;
+}
+
+.chart-container {
+  width: 250px; /* Adjust width */
+  height: 250px; /* Adjust height */
+  margin: 20px auto;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
