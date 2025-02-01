@@ -8,7 +8,6 @@ ChartJS.register(
     Tooltip,
     Legend
 )
-
 const data = {
     labels: ["Red", "Orange", "Yellow", "Green", "Blue"],
     datasets: [
