@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'; //Navigation bar
 import Home from './Pages/Home'; //Home page
 import Trends from './Pages/Trends'; //Trends page
 import Subscriptions from './Pages/Subscriptions'; //Subscriptions page
+import Profile from './Pages/Profile'; //Profile
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/subscriptions" element={<Subscriptions />} />
           <Route path="/trends" element={<Trends />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </Router>
   )
