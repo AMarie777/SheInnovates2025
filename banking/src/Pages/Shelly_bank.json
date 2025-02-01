@@ -2,8 +2,8 @@
     "users": [
       {
         "user_id": 1,
-        "name": "Shelly",
-        "email": "shelly@example.com",
+        "name": "Shelby",
+        "email": "shelby@example.com",
         "phone": "123-456-7890"
       }
     ],
@@ -12,7 +12,7 @@
         "account_id": 1,
         "user_id": 1,
         "account_number": "123456789012",
-        "bank_name": "Bank of America",
+        "bank_name": "Gabexa Banking",
         "account_type": "Checking",
         "balance": 5000.00
       }
@@ -71,28 +71,55 @@
         "charge_id": 2,
         "user_id": 1,
         "account_id": 1,
-        "amount": 700.02,
-        "charge_date": "2025-02-09",
+        "amount": 11.99,
+        "charge_date": "2025-01-07",
         "frequency": "Monthly",
-        "description": "Rent"
+        "description": "Spotify"
       },
       {
         "charge_id": 3,
         "user_id": 1,
         "account_id": 1,
-        "amount": 15.99,
-        "charge_date": "2025-03-01",
+        "amount": 700.09,
+        "charge_date": "2025-01-09",
         "frequency": "Monthly",
-        "description": "Netflix Subscription"
+        "description": "Rent"
       },
       {
         "charge_id": 4,
         "user_id": 1,
         "account_id": 1,
         "amount": 700.02,
-        "charge_date": "2025-03-09",
+        "charge_date": "2024-12-09",
         "frequency": "Monthly",
         "description": "Rent"
+      },
+      {
+        "charge_id": 5,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "charge_date": "2025-01-01",
+        "frequency": "Monthly",
+        "description": "Netflix Subscription"
+      },
+      {
+        "charge_id": 6,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.02,
+        "charge_date": "2024-11-09",
+        "frequency": "Monthly",
+        "description": "Rent"
+      },
+      {
+        "charge_id": 7,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "charge_date": "2024-12-01",
+        "frequency": "Monthly",
+        "description": "Netflix Subscription"
       }
     ]
   }

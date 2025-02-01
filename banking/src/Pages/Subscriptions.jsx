@@ -10,7 +10,17 @@ import React, { useState, useEffect } from 'react';
     
         useEffect(() => {
             if (data && data.subscriptions) {
-                setSubscriptions(data.subscriptions);
+                const grouped = data.subscriptions.reduce((acc, sub) => {
+                    const key = sub.description; 
+                    if (!acc[key]) {
+                        acc[key] = { ...sub, charges: [sub.charge_date] }; // Store first charge
+                    } else {
+                        acc[key].charges.push(sub.charge_date); // Add to existing subscription
+                    }
+                    return acc;
+                }, {});
+        
+                setSubscriptions(Object.values(grouped));
             } else {
                 console.error("Error: Data or subscriptions not found");
             }
