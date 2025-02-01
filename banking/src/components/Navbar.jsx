@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import logo from "./heart.png";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <h1 className="logo"> Gabexa</h1>
+            <img src={logo} alt="logo" width="230" height="200"></img>
             <div className="links">
                 <Link className="link" to="/">Home</Link>
                 <Link className="link" to="/subscriptions">Subscriptions</Link>

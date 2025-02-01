@@ -1,34 +1,71 @@
 .navbar {
-    background-color: #1E40AF;
-    padding: 16px; /* Padding around the navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #5e3a7f;
     display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Spacing between left and right sections */
     align-items: center; /* Vertically center the items */
+    justify-content: flex-start;
+    flex-wrap: wrap; /*text wraps when screen is smaller*/
   }
+.navbar img {
+  margin-right: 30px;
+  padding-left: 80px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  /*max-width: 100px;*/
+  /*height: auto;*/
+}
   
   /* Logo styles */
   .logo {
-    font-size: 24px; /* Font size for the title */
-    font-weight: bold; /* Make the title bold */
-    color: white; /* Set the title color to white */
+    /* Font size for the title */
+    /*font-weight: bold; /* Make the title bold */
+    /*color: white; /* Set the title color to white */
   }
   
   /* Container for the links */
   .links {
     display: flex; /* Flexbox for aligning links */
+    gap: 20px;
+    /*margin-left: 50px;*/
+    /*padding: 50px;*/
   }
   
   /* Link styles */
   .link {
-    padding: 8px 16px; /* Padding around the links */
+    padding: 0px 40px; /* Padding around the links */
     color: white; /* Link text color */
     text-decoration: none; /* Remove underline */
-    font-size: 18px; /* Font size of the links */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    font-size: 30px; /* Font size of the links */
+    transition: background-color 0.7s; /* Smooth transition for background color */
   }
   
   /* Change link color on hover */
   .link:hover {
-    background-color: #2563EB; /* Lighter blue on hover */
+    background-color: white; /* Lighter blue on hover */
+    opacity: 80%;
     border-radius: 4px; /* Slight rounded corners */
   }  
+
+  @media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column; /* Stack logo on top of links */
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar img {
+        margin: 0 auto 10px auto; /* Centers the logo */
+        padding: 0;
+        display: block;
+    }
+
+    .links {
+        flex-direction: row; /* Keeps buttons in a row */
+        justify-content: center;
+        width: 100%;
+    }
+}
