@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 /* Link component creates navigatable links to diff pages */
 
 export default function Home() {
