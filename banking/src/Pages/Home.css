@@ -1,23 +1,54 @@
 body {
-    margin: 0; /* Removes default browser margin */
-    padding: 0;
     text-align: center;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #fce1f3; /* Pastel Pink */
     color: #7d5ba6;
 }
 
 .home{
     text-align: center;
-    padding-top: 200px;
-    /*padding-top: 0px;*/
+    padding-top: 250px;
 }
 
-.message {
+.welcome_msg {
     font-size: 20px;
     padding: 0 20px;
 }
 
+.message1 {
+    font-size: 25;
+    font-weight: bold;
+    font-style: italic;
+}
+.features {
+    display: flex;
+    justify-content: center; /* Pushes the spans to the left and right */
+    gap: 5%;
+    align-items: center; /* Aligns them properly */
+    width: 100%; /* Ensures they take full width */
+    margin-top: 20px;
+}
+
+.features span {
+    width: 35%; /* Each span takes roughly half the width */
+    padding-top: 15px;
+    padding: 30px;
+    background: rgba(189, 47, 161, 0.138); /* Light background */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325); /* Soft shadow effect */
+    font-size: 22px;
+    color: #7d5ba6;
+    text-align: center;
+}
+
+.message2 {
+    font-size: 25;
+    font-weight: bold;
+}
+
+
+
+/*different screen sizes*/
 @media (max-width: 1000px) {
     .home {
         padding-top: 300px; /* Extra space when navbar stacks vertically */

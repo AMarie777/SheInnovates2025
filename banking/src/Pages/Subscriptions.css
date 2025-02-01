@@ -11,7 +11,7 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325);
-    /*transition: all 0.3s ease;*/
+
     overflow: hidden;
     cursor: pointer;
 }
@@ -31,7 +31,6 @@
 }
 .price {
     padding-left:30px;
-    
 }
 
 .subscription-item.expanded {
