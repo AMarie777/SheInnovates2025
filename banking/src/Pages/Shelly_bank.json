@@ -36,7 +36,8 @@
         "amount": 50.00,
         "transaction_date": "2025-02-01T00:00:00",
         "transaction_type": "Payment",
-        "description": "Grocery shopping"
+        "description": "Grocery shopping",
+        "category": "Grocery"
       },
       {
         "transaction_id": 2,
@@ -45,7 +46,8 @@
         "amount": 20.00,
         "transaction_date": "2025-02-01T00:00:00",
         "transaction_type": "Payment",
-        "description": "Coffee shop"
+        "description": "Coffee shop",
+        "category": "Dining"
       },
       {
         "transaction_id": 3,
@@ -54,7 +56,8 @@
         "amount": 100.00,
         "transaction_date": "2025-02-01T00:00:00",
         "transaction_type": "Withdrawal",
-        "description": "ATM cash withdrawal"
+        "description": "ATM cash withdrawal",
+        "category": "Other"
       }
     ],
     "subscriptions": [
@@ -65,7 +68,8 @@
         "amount": 15.99,
         "charge_date": "2025-02-01",
         "frequency": "Monthly",
-        "description": "Netflix Subscription"
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
       },
       {
         "charge_id": 2,
@@ -74,7 +78,8 @@
         "amount": 11.99,
         "charge_date": "2025-01-07",
         "frequency": "Monthly",
-        "description": "Spotify"
+        "description": "Spotify",
+        "category": "Entertainment"
       },
       {
         "charge_id": 3,
@@ -83,7 +88,8 @@
         "amount": 700.09,
         "charge_date": "2025-01-09",
         "frequency": "Monthly",
-        "description": "Rent"
+        "description": "Rent",
+        "category": "Bills"
       },
       {
         "charge_id": 4,
@@ -92,7 +98,9 @@
         "amount": 700.02,
         "charge_date": "2024-12-09",
         "frequency": "Monthly",
-        "description": "Rent"
+        "description": "Rent",
+        "category": "Bills"
+
       },
       {
         "charge_id": 5,
@@ -101,7 +109,8 @@
         "amount": 15.99,
         "charge_date": "2025-01-01",
         "frequency": "Monthly",
-        "description": "Netflix Subscription"
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
       },
       {
         "charge_id": 6,
@@ -110,7 +119,8 @@
         "amount": 700.02,
         "charge_date": "2024-11-09",
         "frequency": "Monthly",
-        "description": "Rent"
+        "description": "Rent",
+        "category": "Bills"
       },
       {
         "charge_id": 7,
@@ -119,7 +129,8 @@
         "amount": 15.99,
         "charge_date": "2024-12-01",
         "frequency": "Monthly",
-        "description": "Netflix Subscription"
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
       }
     ]
   }
