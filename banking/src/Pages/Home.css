@@ -99,6 +99,11 @@ hr {
 
 /*Responsive Design*/
 @media (max-width: 768px) {
+    .home{
+        text-align: center;
+        padding-top: 500px;
+    }
+
     .transaction-list {
         width: 95%;
     }

@@ -12,7 +12,6 @@
 
 .navbar img {
   margin-right: 30px;
-  
   padding-left: 80px; /* Reduce excessive left padding */
     padding-bottom: 10px; /* Reduce padding to prevent layout issues */
     height: auto;
@@ -46,17 +45,28 @@
       flex-direction: column; /* Stack logo on top of links */
       align-items: center;
       text-align: center;
+      padding: 10px;
   }
 
   .navbar img {
       margin: 0 auto 10px auto; /* Centers the logo */
       padding: 0;
       display: block;
+      max-width:80%;
   }
 
   .links {
-      flex-direction: row; /* Keeps buttons in a row */
-      justify-content: center;
+      flex-direction: column; /* Keeps buttons in a row */
+      /*justify-content: center;*/
       width: 100%;
+      align-items:center;
   }
+
+  .link {
+    padding: 10px 0; /* Adjust padding for stacked links */
+    font-size: 24px; /* Adjust font size for readability */
+    width: 100%; /* Ensure links span full width */
+    text-align: center; /* Center text in each link */
+  }
+
 }
