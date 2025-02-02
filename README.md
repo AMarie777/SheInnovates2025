@@ -1,4 +1,4 @@
-# SheInnovates2025
+# SheInnovates2025 - GaBANKxa
 ## Inspiration
 * Money comes in, money goes out... but do we really know where it's going?
 * When we saw PNC’s challenge, as PNC customers we decided to visit our mobile banking apps and think about our own financial habits. We realized that between the two of us we had lost hundreds of dollars to unwanted subscriptions and overspending on things we didn't need, and we aren't alone. Many people (especially young adults) don’t keep up with their spending, leading to overspending, unwanted subscriptions, or even fraudulent charges slipping through the cracks. Features that provide simple-to-understand spending insights and subscription tracking wouldve made huge difference in helping us stay financially aware. We wanted to create something that helps people take control of their money in a simple way. 
