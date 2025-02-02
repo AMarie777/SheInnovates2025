@@ -58,6 +58,76 @@
         "transaction_type": "Withdrawal",
         "description": "ATM cash withdrawal",
         "category": "Other"
+      },
+      {
+        "transaction_id": 4,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 75.00,
+        "transaction_date": "2025-02-05T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Restaurant dining",
+        "category": "Dining"
+      },
+      {
+        "transaction_id": 5,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 120.00,
+        "transaction_date": "2025-02-07T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Electronics purchase",
+        "category": "Shopping"
+      },
+      {
+        "transaction_id": 6,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 200.00,
+        "transaction_date": "2025-02-10T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Clothing shopping",
+        "category": "Shopping"
+      },
+      {
+        "transaction_id": 7,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 60.00,
+        "transaction_date": "2025-02-12T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Gas station",
+        "category": "Transportation"
+      },
+      {
+        "transaction_id": 8,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.00,
+        "transaction_date": "2025-02-14T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Coffee shop",
+        "category": "Dining"
+      },
+      {
+        "transaction_id": 9,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 40.00,
+        "transaction_date": "2025-02-15T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Uber ride",
+        "category": "Transportation"
+      },
+      {
+        "transaction_id": 10,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.09,
+        "transaction_date": "2025-02-18T00:00:00",
+        "transaction_type": "Payment",
+        "description": "Monthly rent",
+        "category": "Bills"
       }
     ],
     "subscriptions": [
