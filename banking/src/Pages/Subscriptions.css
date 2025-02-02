@@ -1,24 +1,29 @@
 /* whole page */
 .subscriptions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 280px;
+}
+
+.header {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    font-size:large;
 }
 
 /*each subscription box*/
 .subscription-item {
+    width: 100%;
+    margin: 0 auto 20px auto; /*space between boxes ----- padding == space in boxes*/
+    padding: 20px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325);
-
     overflow: hidden;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 /*text in subcription box*/
 .subscription-header {
     padding: 20px; /*size of boxes vertically*/
+    
     font-size: 18px;
     font-weight: bold;
     background-color: #fff;
@@ -66,4 +71,11 @@
 
 .contest-button:hover {
     background-color: #d9363e;
+}
+
+/*Responsive Design*/
+@media (max-width: 868px) {
+    .header {
+        padding-top: 200px;
+    }
 }
