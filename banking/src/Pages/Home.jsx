@@ -62,7 +62,7 @@ export default function Home() {
                             <span className="trans-amnt"> ${transaction.amount.toFixed(2)}</span>
                             <span className="trans-date">{new Date(transaction.transaction_date).toLocaleDateString()}</span>
                             <span className="trans-desc"> {transaction.description}</span>
-                            {/*add className="trans-category"*/}
+                            <span className="trans-category">{transaction.category}</span>
                         </div>
                     ))}
                     </>

@@ -34,9 +34,11 @@ import React, { useState, useEffect } from 'react';
 
     return (
         <div className="subscriptions">
-            <h1>Subscriptions</h1>
-            <p>Track your monthly subscriptions</p>
-            <p>Click on subscription to see charge history</p>
+            <div className="header">
+                <h1>Subscriptions &#128176;</h1>
+                <h2>Track your monthly subscriptions</h2>
+                <h2><i>Click on subscription to see charge history</i></h2>
+            </div>
 
             {subscriptions.map((sub, index) => (
                 <div key={index} className="subscription-item">
@@ -65,3 +67,5 @@ import React, { useState, useEffect } from 'react';
         </div>
     )
 }
+
+

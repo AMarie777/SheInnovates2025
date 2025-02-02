@@ -28,7 +28,7 @@ const Trends = () => {
     return (
         /*JSX elements must have at least one parent element */
         <div className="trends">
-            <h1>Trends</h1>
+            <h1>Trends &#128202;</h1>
             <p>View your monthly spending insights and trends</p>
 
             <div
