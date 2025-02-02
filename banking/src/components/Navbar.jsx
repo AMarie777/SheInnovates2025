@@ -5,7 +5,7 @@ import logo from "./heart.png";
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <img src={logo} alt="logo" width="230" height="200"></img>
+            <img src={logo} alt="logo" width="130" height="200"></img>
             <div className="links">
                 <Link className="link" to="/">Home</Link>
                 <Link className="link" to="/subscriptions">Subscriptions</Link>

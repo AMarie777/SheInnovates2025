@@ -7,11 +7,11 @@ export default function Home() {
     const [transactions, setTransactions] = useState([]); 
 
     useEffect(() => {
-        // Extract user bank details
+        //Extract user bank details
         const bankData = data.bank_accounts.find(bank_account => bank_account.user_id === 1);
         setBank(bankData);
 
-        // Extract all transactions for the user
+        //Extract all transactions for the user
         const transactionsData = data.transactions.filter(transaction => transaction.user_id === 1);
         setTransactions(transactionsData);
     }, []);
@@ -38,22 +38,34 @@ export default function Home() {
 
             </div>
 
-            {/* Ensure the bank balance is properly displayed */}
+            {/*Ensure the bank balance is properly displayed*/}
             <h2>Balance: {bank ? bank.balance : "Error retrieving balance"}</h2>
             <hr />
-            <h3 className="purchase-history-header">Purchase History:</h3>
-
-            {/* Display list of transactions */}
+        
+            {/*Display list of transactions*/}
             <div className="transaction-list">
                 {transactions.length > 0 ? (
-                    transactions.map((transaction, index) => (
+                    <>
+                    {/*Table Headers*/}
+                    <div className="transaction-headers">
+                        <span>Amount</span>
+                        <span>Date</span>
+                        <span>Description</span>
+                        <span>Category</span>
+                    </div>
+                    <hr />
+
+                    {/*Transaction Data*/}
+
+                    {transactions.map((transaction, index) => (
                         <div key={transaction.transaction_id} className="transaction-item">
-                            <p><strong>Amount:</strong> ${transaction.amount.toFixed(2)}</p>
-                            <p><strong>Date:</strong> {new Date(transaction.transaction_date).toLocaleDateString()}</p>
-                            <p><strong>Description:</strong> {transaction.description}</p>
-                            <hr />
+                            <span className="trans-amnt"> ${transaction.amount.toFixed(2)}</span>
+                            <span className="trans-date">{new Date(transaction.transaction_date).toLocaleDateString()}</span>
+                            <span className="trans-desc"> {transaction.description}</span>
+                            {/*add className="trans-category"*/}
                         </div>
-                    ))
+                    ))}
+                    </>
                 ) : (
                     <p>No transactions found.</p>
                 )}

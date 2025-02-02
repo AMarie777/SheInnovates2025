@@ -1,13 +1,13 @@
 body {
     text-align: center;
     font-family: "Poppins", sans-serif;
-    background-color: #fce1f3; /* Pastel Pink */
+    background-color: #fce1f3; /*Pastel Pink*/
     color: #7d5ba6;
 }
 
 .home{
     text-align: center;
-    padding-top: 250px;
+    padding-top: 150px;
 }
 
 .welcome_msg {
@@ -22,20 +22,20 @@ body {
 }
 .features {
     display: flex;
-    justify-content: center; /* Pushes the spans to the left and right */
-    gap: 5%;
-    align-items: center; /* Aligns them properly */
-    width: 100%; /* Ensures they take full width */
+    justify-content: center; /*Pushes spans to left and right*/
+    gap: 5%; /*Gap between feature boxes*/
+    align-items: center;
+    width: 100%;
     margin-top: 20px;
 }
 
 .features span {
-    width: 35%; /* Each span takes roughly half the width */
+    width: 35%; /*Each span takes roughly half the width of page*/
     padding-top: 15px;
     padding: 30px;
-    background: rgba(189, 47, 161, 0.138); /* Light background */
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325); /* Soft shadow effect */
+    background: rgba(189, 47, 161, 0.138);
+    border-radius: 20px; /*Rounded edges*/
+    box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325); /*Soft shadow effect*/
     font-size: 22px;
     color: #7d5ba6;
     text-align: center;
@@ -44,19 +44,70 @@ body {
 .message2 {
     font-size: 25;
     font-weight: bold;
+    padding-bottom: 50px;
 }
 
 
+/*Transaction List*/
+.transaction-list {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(134, 36, 98, 0.325);
+}
 
-/*different screen sizes*/
-@media (max-width: 1000px) {
-    .home {
-        padding-top: 300px; /* Extra space when navbar stacks vertically */
+/*Table Headers*/
+.transaction-headers {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 10px;
+    background: #d8a7d8;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.transaction-headers span,
+.transaction-item span {
+    flex: 1; /*equal width for all columns*/
+    text-align: center;
+}
+
+/*Transaction Rows*/
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    color: #5d2e8c;
+}
+
+
+/*Horizontal line separator*/
+hr {
+    border: 0.5px solid #ccc;
+    width: 100%;
+}
+
+/*Alternating row colors*/
+.transaction-item:nth-child(even) {
+    background: #fce4ec; /*Light pink for contrast*/
+}
+
+/*Responsive Design*/
+@media (max-width: 768px) {
+    .transaction-list {
+        width: 95%;
     }
-}
 
-@media (max-width: 600px) {
-    .home {
-        padding-top: 300px; /* More space for very small screens */
+    .transaction-headers,
+    .transaction-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 12px;
     }
 }
