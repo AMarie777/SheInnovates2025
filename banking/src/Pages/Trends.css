@@ -1,26 +1,27 @@
 body {
-  margin: 0; /* Removes default browser margin */
+  margin: 0;
   padding: 0;
   text-align: center;
   font-family: "Inter", sans-serif;
-  background-color: #fce1f3; /* Pastel Pink */
+  background-color: #fce1f3;
   color: #7d5ba6;
 }
 
 .trends {
   text-align: center;
-  padding-top: 250px;
+  padding-top: 180px;
+  font-size: 25px;
   
 }
 
 .chart-container {
-  width: 250px; /* Adjust width */
-  height: 250px; /* Adjust height */
+  width: 250px;
+  height: 250px;
   margin: 20px auto;
 }
 
 canvas {
-  display: block; /* Ensure the canvas is visible */
+  display: block;
   margin: 0 auto;
   width: 100% !important;
   height: 100% !important;
@@ -28,12 +29,12 @@ canvas {
 
 @media (max-width: 1000px) {
   .trends {
-      padding-top: 300px; /* Extra space when navbar stacks vertically */
+      padding-top: 200px;
   }
 }
 
 @media (max-width: 600px) {
   .trends {
-      padding-top: 300px; /* More space for very small screens */
+      padding-top: 300px;
   }
 }

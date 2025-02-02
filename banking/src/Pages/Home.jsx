@@ -56,7 +56,6 @@ export default function Home() {
                     <hr />
 
                     {/*Transaction Data*/}
-
                     {transactions.map((transaction, index) => (
                         <div key={transaction.transaction_id} className="transaction-item">
                             <span className="trans-amnt"> ${transaction.amount.toFixed(2)}</span>

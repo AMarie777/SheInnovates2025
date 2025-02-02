@@ -22,15 +22,15 @@ export default function Profile() {
             <img src={pfp} width="300" height="300"></img>
             <h1>Your Profile</h1>
             <div className="profile-details">
-            <p>Name: {user ? user.name : "Error"}</p>
-                <p>Email:  {user ? user.email : "Error"} </p>
-                <p>Phone:  {user ? user.phone : "Error"} </p> 
+            <p><b>Name:</b> {user ? user.name : "Error"}</p>
+                <p><b>Email:</b>  {user ? user.email : "Error"} </p>
+                <p><b>Phone:</b>  {user ? user.phone : "Error"} </p> 
             </div>
             <div className="card-details">
-                <p>Card Number:  {card ? card.card_number : "Error"} </p>
-                <p>Card Type: {card ? card.card_type : "Error"} </p>
-                <p>Exp. Date: {card ? card.expiration_date : "Error"} </p>
-                <p>CVV: {card ? card.cvv : "Error"} </p>
+                <p><b>Card Number:</b>  {card ? card.card_number : "Error"} </p>
+                <p><b>Card Type:</b> {card ? card.card_type : "Error"} </p>
+                <p><b>Exp. Date:</b> {card ? card.expiration_date : "Error"} </p>
+                <p><b>CVV:</b> {card ? card.cvv : "Error"} </p>
             </div>
         </div>
     )

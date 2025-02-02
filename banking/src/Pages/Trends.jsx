@@ -18,7 +18,7 @@ const getCurrentMonthTransactions = (transactions) => {
     });
 };
 
-// Categorize transactions based on category property
+//Categorize transactions based on category property
 const categorizeTransactions = (transactions) => {
   const categories = {};
   
@@ -72,8 +72,8 @@ const Trends = () => {
 
   return (
     <div className="trends">
-      <h1>Trends</h1>
-      <p>View your monthly spending insights and trends</p>
+      <h1>Trends&#128202;</h1>
+      <p><b>View your monthly spending insights and trends</b></p>
 
       {/* Toggle Buttons */}
       <div className="filter-buttons">
