@@ -2,7 +2,7 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 import "./Trends.css";
-import data from "./Shelly_bank.json"; // Import the JSON file
+import data from "./Shelly_bank.json"; //Import the JSON file
 
 ChartJS.register(
   ArcElement,
@@ -10,14 +10,14 @@ ChartJS.register(
   Legend
 );
 
-// Categorize transactions based on category property
+//Categorize transactions based on category property
 const categorizeTransactions = (transactions) => {
   const categories = {};
 
   transactions.forEach(transaction => {
     const category = transaction.category; 
     if (categories[category]) {
-      categories[category] += transaction.amount; // add up
+      categories[category] += transaction.amount; //add up
     } else {
       categories[category] = transaction.amount;
     }
@@ -53,7 +53,7 @@ const options = {
         label: function(tooltipItem) {
           const label = tooltipItem.label || '';
           const value = tooltipItem.raw;
-          return `${label}: $${value.toFixed(2)}`; // Format dollas
+          return `${label}: $${value.toFixed(2)}`; //Format dollas
         }
       }
     }

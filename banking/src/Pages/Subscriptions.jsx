@@ -13,23 +13,34 @@ import React, { useState, useEffect } from 'react';
                 const grouped = data.subscriptions.reduce((acc, sub) => {
                     const key = sub.description; 
                     if (!acc[key]) {
-                        acc[key] = { ...sub, charges: [sub.charge_date] }; // Store first charge
+                        acc[key] = { ...sub, charges: [sub.charge_date] }; //Store first charge
                     } else {
-                        acc[key].charges.push(sub.charge_date); // Add to existing subscription
+                        acc[key].charges.push(sub.charge_date); //Add to existing subscription
                     }
                     return acc;
                 }, {});
         
-                setSubscriptions(Object.values(grouped));
+                //Load contested subscriptions from localStorage
+                const contestedSubs = JSON.parse(localStorage.getItem("contestedSubs")) || [];
+                const updatedSubs = Object.values(grouped).map(sub => ({
+                    ...sub,
+                    status: contestedSubs.includes(sub.description) ? "Under Review" : "Active",
+                }));
+
+                setSubscriptions(updatedSubs);
+
             } else {
                 console.error("Error: Data or subscriptions not found");
             }
         }, []);
 
   
-
     const toggleExpand = (index) => {
         setExpanded(expanded === index ? null : index);
+    };
+
+    const handleContest = (sub) => {
+        localStorage.setItem("contestedSubscription", JSON.stringify(sub)); //Store contested subscription in local storage
     };
 
     return (
@@ -49,20 +60,31 @@ import React, { useState, useEffect } from 'react';
                         <span className="price">${sub.amount ? Number(sub.amount).toFixed(2) : "0.00"}</span>
                     </div>
 
+                    <p className={`status ${sub.status === "Under Review" ? "pending" : ""}`}>
+                        {sub.status}
+                    </p>
                     
                     {expanded === index && (
                         <div className="subscription-details">
-                            
                             <ul>
                                 {sub.charges.map((date, idx) => (
                                     <li key={idx}>{date}</li>
                                 ))}
                             </ul>
-                            <Link className="contest-button" to="./Contest">Do Not Recognize</Link>
+                            {/*Store in localStorage and go to /contest*/}
+                            <Link className="contest-button" to="/contest" onClick={() => handleContest(sub)}> Do Not Recognize </Link>
                         </div>
                     )}
                 </div>
             ))} 
+
+            {/*Reset button to make all subscriptions active*/}
+            <button onClick={() => {
+                localStorage.clear();
+                window.location.reload(); //Refresh to apply changes
+            }}>
+                Reset Subscriptions
+            </button>
 
         </div>
     )
