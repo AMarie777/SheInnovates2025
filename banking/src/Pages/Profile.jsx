@@ -19,7 +19,7 @@ export default function Profile() {
 
     return (
         <div className="profile">
-            <img src={pfp} alt="pfp" width="300" height="300"></img>
+            <img src={pfp} width="300" height="300"></img>
             <h1>Your Profile</h1>
             <div className="profile-details">
             <p>Name: {user ? user.name : "Error"}</p>

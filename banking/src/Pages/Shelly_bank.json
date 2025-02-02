@@ -34,7 +34,7 @@
         "user_id": 1,
         "account_id": 1,
         "amount": 50.00,
-        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_date": "2025-02-01",
         "transaction_type": "Payment",
         "description": "Grocery shopping",
         "category": "Grocery"
@@ -44,7 +44,7 @@
         "user_id": 1,
         "account_id": 1,
         "amount": 20.00,
-        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_date": "2025-02-01",
         "transaction_type": "Payment",
         "description": "Coffee shop",
         "category": "Dining"
@@ -54,10 +54,91 @@
         "user_id": 1,
         "account_id": 1,
         "amount": 100.00,
-        "transaction_date": "2025-02-01T00:00:00",
+        "transaction_date": "2025-02-01",
         "transaction_type": "Withdrawal",
         "description": "ATM cash withdrawal",
         "category": "Other"
+      },
+      {
+        "transaction_id": 4,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "transaction_date": "2025-02-01",
+        "transaction_type": "Payment",
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
+      },
+      {
+        "transaction_id": 5,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 11.99,
+        "transaction_date": "2025-01-07",
+        "transaction_type": "Payment",
+        "description": "Spotify",
+        "category": "Entertainment"
+      },
+      {
+        "transaction_id": 6,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.09,
+        "transaction_date": "2025-01-09",
+        "transaction_type": "Payment",
+        "description": "Rent",
+        "category": "Bills"
+      },
+      {
+        "transaction_id": 7,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.02,
+        "transaction_date": "2024-12-09",
+        "transaction_type": "Payment",
+        "description": "Rent",
+        "category": "Bills"
+
+      },
+      {
+        "transaction_id": 8,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "transaction_date": "2025-01-01",
+        "transaction_type": "Payment",
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
+      },
+      {
+        "transaction_id": 9,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 700.02,
+        "transaction_date": "2024-11-09",
+        "transaction_type": "Payment",
+        "description": "Rent",
+        "category": "Bills"
+      },
+      {
+        "transaction_id": 10,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 15.99,
+        "transaction_date": "2024-12-01",
+        "transaction_type": "Payment",
+        "description": "Netflix Subscription",
+        "category": "Entertainment"
+      },
+      {
+        "transaction_id": 11,
+        "user_id": 1,
+        "account_id": 1,
+        "amount": 11.99,
+        "transaction_date": "2024-12-07",
+        "transaction_type": "Payment",
+        "description": "Spotify",
+        "category": "Entertainment"
       }
     ],
     "subscriptions": [

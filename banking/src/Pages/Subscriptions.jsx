@@ -35,8 +35,8 @@ import React, { useState, useEffect } from 'react';
     return (
         <div className="subscriptions">
             <div className="header">
-                <h1>Subscriptions &#128176;</h1>
-                <h2>Track your monthly subscriptions</h2>
+                <h1>Subscriptions</h1>
+                <h2> &#128176;Track your monthly subscriptions&#128176;</h2>
                 <h2><i>Click on subscription to see charge history</i></h2>
             </div>
 
